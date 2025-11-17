@@ -1,0 +1,84 @@
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    background-color: #fff;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.paragraph1 {
+    text-align: center;
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    margin: 0 10%;
+}
+
+.message {
+    max-width: 500px;
+}
+
+h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1em;
+    color: #333;
+}
+
+span {
+    background-color: #cdece3;
+}
+
+button {
+    background-color: #00ab6b;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 150px;
+}
+
+button:hover {
+    background-color: #00925c;
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+footer hr {
+    width: 90%;
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin-bottom: 10px;
+}
