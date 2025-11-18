@@ -1,0 +1,228 @@
+/* responsive.css */
+/* ---------------------------------------------------------
+   Responsive layout for Wirework template
+   Desktop layout (> 768px) and Mobile layout (< 768px)
+--------------------------------------------------------- */
+
+/* ---------- Default: Desktop (width > 768px) ---------- */
+@media (min-width: 769px) {
+    /* Header */
+    .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .nav-link {
+        display: inline-block;
+        padding: 10px 15px;
+    }
+
+    /* Hero */
+    .hero {
+        height: 400px;
+    }
+
+    /* Info Banner */
+    .info-banner p {
+        font-size: 14px;
+    }
+
+    /* Features */
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        text-align: center;
+        align-items: stretch;
+    }
+
+    .feature-item {
+        background-color: #3d3d3d;
+        padding: 20px;
+        border-radius: 8px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .feature-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+
+    /* CTA */
+    .cta h2 {
+        font-size: 32px;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: repeat(4, 1fr);
+        text-align: left;
+    }
+
+    .footer-column p {
+        font-size: 14px;
+    }
+}
+
+/* ---------- Mobile Layout (width <= 768px) ---------- */
+@media (max-width: 768px) {
+    /* General */
+    body {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Header */
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .logo {
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-link {
+        text-align: center;
+        width: 100%;
+        background-color: #f8f8f8;
+        border-radius: 5px;
+    }
+
+    .nav-link.active {
+        background-color: #E8563A;
+        color: #fff;
+    }
+
+    /* Hero */
+    .hero {
+        height: 250px;
+    }
+
+    .hero-image {
+        background-position: center;
+    }
+
+    /* Info Banner */
+    .info-banner {
+        padding: 30px 15px;
+    }
+
+    .info-banner p {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    /* Features */
+    .features {
+        padding: 40px 15px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .feature-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .feature-icon i {
+        font-size: 28px;
+    }
+
+    .feature-item h3 {
+        font-size: 16px;
+    }
+
+    .feature-item p {
+        font-size: 14px;
+    }
+
+    /* CTA Section */
+    .cta {
+        padding: 50px 15px;
+    }
+
+    .cta h2 {
+        font-size: 22px;
+        line-height: 1.3;
+    }
+
+    .cta-subtitle {
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+    .cta-button {
+        width: 100%;
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    /* Footer */
+    .footer-content {
+        padding: 40px 15px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-column h3 {
+        font-size: 16px;
+    }
+
+    .footer-column p {
+        font-size: 14px;
+    }
+
+    .footer-bottom {
+        padding: 20px 10px;
+    }
+
+    .footer-bottom p {
+        font-size: 10px;
+    }
+}
+
+/* ---------- Tablet Layout (769px - 1024px) ---------- */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .cta h2 {
+        font-size: 26px;
+    }
+
+    .cta-subtitle {
+        font-size: 12px;
+    }
+}
